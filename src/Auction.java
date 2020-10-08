@@ -29,9 +29,9 @@ public class Auction {
 	}
 	public Auction (Wine wine,User owner,String itemDescription) {
 		this.wine=wine;
-		this.owner=owner;
+		this.owner=owner; 
 		if(!itemDescription.contains(owner.getAddress()) || !itemDescription.matches(User.TelRegex) || !itemDescription.matches(User.EmailRegex) )
-			this.itemDescription= itemDescription;
+			this.itemDescription= itemDescription; //TODO
 		
 	}
 	public Auction(Wine wine,Offer startingOffer) {

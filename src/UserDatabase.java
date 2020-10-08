@@ -14,7 +14,7 @@ public class UserDatabase {
 				throw new UsernameTakenException("User already in database");
 			if (User.checkPassword(u.getPassword()));
 				throw new PasswordWeakException("Password does not meet basic requirements");
-			if(User.checkContact(tel, address, email))
+			if(User.checkContact(tel, address, email)) // TODO
 		}catch (UsernameTakenException e ) {
 			result = e.getMessage();
 		} catch (PasswordWeakException e) {
