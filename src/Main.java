@@ -11,6 +11,8 @@ public class Main {
 		System.out.println(ad.DbtoString());
 		User u = new User("Zimice","Javajava1.");
 		System.out.println(User.checkPassword("Javajava1&"));
+		Auction advert = AdvertParser.getAuction("Advert/Test.txt");
+		System.out.println(advert.toString());
 	//	DBConnection db = new DBConnection();
 		//ArrayList<Wine> wines = db.selectRecords();
 		//for(Wine w : wines) {

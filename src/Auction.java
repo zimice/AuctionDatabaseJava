@@ -3,7 +3,7 @@ import java.util.Stack;
 public class Auction {
 	Wine wine;
 	Stack<Offer> offers;
-	User owner;
+	Person owner;
 	String itemDescription;
 	public Wine getWine() {
 		return wine;
@@ -22,12 +22,17 @@ public class Auction {
 	public Offer getLastOffer() {
 		return offers.lastElement();
 	}
+	@Override
+	public String toString() {
+		return "Auction [wine=" + wine + ", offers=" + offers + ", owner=" + owner.toString() + ", itemDescription="
+				+ itemDescription + "]";
+	}
 	public Auction(Wine wine) {
 		super();
 		this.wine = wine;
 		offers.add(new Offer(wine.getPrice()));
 	}
-	public Auction (Wine wine,User owner,String itemDescription) {
+	public Auction (Wine wine,Person owner,String itemDescription) {
 		this.wine=wine;
 		this.owner=owner; 
 		if(!itemDescription.contains(owner.getAddress()) || !itemDescription.matches(User.TelRegex) || !itemDescription.matches(User.EmailRegex) )
