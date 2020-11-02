@@ -1,3 +1,4 @@
+package AuctionDatabase;
 import java.util.HashSet;
 
 public class UserDatabase {

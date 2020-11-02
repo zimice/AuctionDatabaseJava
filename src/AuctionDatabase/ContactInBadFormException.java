@@ -1,3 +1,4 @@
+package AuctionDatabase;
 
 public class ContactInBadFormException extends Exception {
 	public ContactInBadFormException() {

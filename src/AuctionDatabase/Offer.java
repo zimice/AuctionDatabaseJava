@@ -1,3 +1,4 @@
+package AuctionDatabase;
 
 public class Offer {
 	private User user;

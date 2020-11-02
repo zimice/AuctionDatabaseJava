@@ -1,3 +1,4 @@
+package AuctionDatabase;
 
 public class Person {
 	private String name;

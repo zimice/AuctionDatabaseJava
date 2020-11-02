@@ -1,5 +1,3 @@
-/.classpath
-/.project
-/.settings/
-/Advert/
-/lib/
+/AuctionTestCase.class
+/UnitTests/
+/AuctionDatabase/

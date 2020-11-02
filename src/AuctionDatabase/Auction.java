@@ -1,8 +1,9 @@
+package AuctionDatabase;
 import java.util.Stack;
 
 public class Auction {
 	Wine wine;
-	Stack<Offer> offers;
+	Stack<Offer> offers = new Stack();
 	Person owner;
 	String itemDescription;
 	public Wine getWine() {

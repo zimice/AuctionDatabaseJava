@@ -1,3 +1,4 @@
+package AuctionDatabase;
 
 public class Wine {
 	private int year;
@@ -47,9 +48,6 @@ public class Wine {
 		this.name = name;
 		this.startingPrice = price;
 		this.servingTemperature = servingTemperature;
-	}
-	public Wine(String string, int int1, int int2, int int3, double double1) {
-		// TODO Auto-generated constructor stub
 	}
 	
 

@@ -1,3 +1,4 @@
+package AuctionDatabase;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.Hashtable;

@@ -1,3 +1,4 @@
+package AuctionDatabase;
 
 public class PasswordWeakException extends Exception {
 
