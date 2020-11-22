@@ -17,7 +17,9 @@ public class Main {
 		Auction ac= new Auction(new Wine(456, TypeOfWine.red, "vino", 29.9, 5416));
 		Offer f= new Offer(30.9);
 		System.out.println(ac.addOffer(f));
-	//	DBConnection db = new DBConnection();
+		
+		DBConnection db = new DBConnection();
+		
 		//ArrayList<Wine> wines = db.selectRecords();
 		//for(Wine w : wines) {
 		//	System.out.println(w.toString());

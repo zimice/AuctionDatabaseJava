@@ -1,0 +1,40 @@
+CREATE TABLE user(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+username TEXT(50) NOT NULL UNIQUE,
+password TEXT(50) NOT NULL,
+tel TEXT(50) NOT NULL,
+address TEXT(50) NOT NULL,
+email TEXT(50) NOT NULL,
+);
+
+CREATE TABLE wine (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+year INT,
+TypeOfWine TEXT(5),
+name TEXT(30),
+startingPrice INT,
+servingTemperature int,
+);
+
+CREATE TABLE auction(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+itemDescription TEXT(50),
+wine_id INTEGER NOT NULL,
+user_id INTEGER NOT NULL,
+FOREIGN KEY (user_id)
+	REFERENCES user(id),
+FOREIGN KEY (wine_id)
+	REFERENCES wine(id)
+);
+
+
+CREATE TABLE offer(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+biddedPrice int,
+user_id INTEGER NOT NULL,
+auction_id INTEGER NOT NULL,
+FOREIGN KEY (user_id)
+	REFERENCES user(id),
+FOREIGN KEY (auction_id)
+	REFERENCES auction(id)
+);
