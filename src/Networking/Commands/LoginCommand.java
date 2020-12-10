@@ -7,13 +7,16 @@ public class LoginCommand extends Command {
 	}
 	@Override
 	public String[] Alias() {
-		return null;
+		String[] aliases = {"login"};
+		return aliases;
 	}
 	@Override
 	public String Execute(Object... objects) {
-		// TODO Auto-generated method stub
+		int a = 0;
+		objects[0] = (int) a;
 		return null;
 	}
 
 
 }
+ 

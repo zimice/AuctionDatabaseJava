@@ -3,10 +3,12 @@ package Networking;
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 
 import AuctionDatabase.User;
 import AuctionDatabase.UserDatabase;
+import Networking.Commands.*;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
@@ -18,6 +20,8 @@ public class ServerThread extends Thread {
 	private String clientSentence;
 	private boolean isConnected, loggedIn;
 	private UserDatabase ud;
+	private static HashMap <String,Command> PublicCommands = new HashMap<>();
+	private static HashMap <String,Command> UserCommands = new HashMap<>();
 	private String TestResponse="You haven't send any response from program";
 
 	public ServerThread(String jmeno, Socket socket, UserDatabase ud) {
@@ -69,5 +73,12 @@ public class ServerThread extends Thread {
 		clientSentence = clientSentence.toLowerCase();
 		return clientSentence;
 	}
-
+	private void initPublicCommands() {
+		
+	}
+	
+	private void initUserCommands() {
+		
+	}
+	
 }

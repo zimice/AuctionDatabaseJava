@@ -24,21 +24,14 @@ public class Main {
 		Offer f= new Offer(30.9);
 		System.out.println(ac.addOffer(f));
 		response+=ac.addOffer(f)+"\r\n";
-//		
-//		DBConnection db = new DBConnection();
-		
 		try {
 			UserDatabase ud = new UserDatabase();
 			System.out.println(ud.addUser(new User("simon","java")));
 			Server s = new Server(ud, response);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
-		
-		//ArrayList<Wine> wines = db.selectRecords();
-		//for(Wine w : wines) {
-		//	System.out.println(w.toString());
-		//}
 	}
 }
+

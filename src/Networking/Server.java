@@ -6,7 +6,7 @@ import java.net.*;
 import AuctionDatabase.UserDatabase;
 
 public class Server {
-	int port = 23;
+	int port = 62223;
 	private ServerSocket welcomeSocket = new ServerSocket(port);
 	private int ThreadCounter = 0;
 	public boolean isRunning = false;
