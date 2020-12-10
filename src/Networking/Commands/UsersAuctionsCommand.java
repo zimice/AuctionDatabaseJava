@@ -1,17 +1,16 @@
 package Networking.Commands;
 
-public class HelpCommand extends Command{
+public class UsersAuctionsCommand extends Command{
 
 	@Override
 	public String[] Alias() {
-		String[] aliases = {"h","help","manual"};
+		String[] aliases = {"myauctions","my"};
 		return aliases;
 	}
 
 	@Override
 	public String Execute() {
-		String response="";
-		return response;
+		return null;
 	}
 
 }
